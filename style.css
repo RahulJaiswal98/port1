@@ -36,7 +36,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 5;
+    z-index: 2;
     padding: 4rem 12% 2rem;
 }
 
@@ -486,6 +486,71 @@ span{
     max-height: 100px;
     line-height: 1.7;
     margin: auto;
+}
+
+.services{
+    border: 2px solid white;
+    background-color: var(--second-bg-color);
+    height: 100vh;
+}
+
+.services .service--heading{
+        text-align: center;
+        font-size: 6rem;
+        margin-bottom: 4rem;
+        border: 2px solid white;
+        
+    
+}
+
+.services .service-items{
+    
+     display: grid;
+     grid-template-columns: repeat(3 , 1fr);
+     gap: 4rem;
+     border: 2px solid white;
+     height: 80%;
+     padding: 0 2rem;
+     justify-content: center;
+     align-items: center;
+    
+         
+}
+
+.service-items .service-item{
+    /* border: 2px solid  transparent; */
+    height: 80%;
+    background-color: rgb(116, 110, 110);
+    border-radius: 3rem;
+    position: relative;
+    /* z-index: 2; */
+}
+
+.service-item h3{
+    text-align: center;
+    font-size: 3rem;
+    margin: 6rem 0 3rem 0;
+}
+.service-item p{
+    text-align: justify;
+    line-height: 2.3rem;
+    font-size: 1.5rem;
+    margin: 0 2rem 0 2rem;
+}
+
+ .service-item::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(216, 136, 16);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50% ;
+    border-radius: 3rem;
+    z-index: -1;
+    padding: 3px;
+    
 }
 
 
